@@ -9,7 +9,7 @@ try:
 except ImportError:
     from distutils.core import setup
 
-version = "0.1.0"
+version = "0.2.1"
 
 if sys.argv[-1] == "publish":
     os.system("python setup.py sdist bdist_wheel upload")
@@ -19,7 +19,6 @@ if sys.argv[-1] == "publish":
     sys.exit()
 
 readme = open("README.rst").read()
-history = open("HISTORY.rst").read().replace(".. :changelog:", "")
 
 setup(
     name="dj-easy-pdf",
@@ -29,7 +28,7 @@ setup(
     author="William Otieno",
     author_email="jimmywilliamotieno@gmail.com",
     url="https://github.com/WilliamOtieno/django-easy-pdf",
-    long_description=readme + "\n\n" + history,
+    long_description=readme + "\n\n",
     packages=[
         "easy_pdf",
     ],
