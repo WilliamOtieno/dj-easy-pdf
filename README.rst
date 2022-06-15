@@ -1,3 +1,3 @@
 - Give me time to refine this. I forked this from somewhere else and modified it because it didn't support my version of django. (Django 4.0)
 - Refer to the docs in https://django-easy-pdf.readthedocs.io/en/v0.2.0-dev1/
-- If you're on django3.2 or django 4 then you have nothing to worry about so run ```pip install dj-easy-pdf```
+- If you're on django3.2 or django 4 then you have nothing to worry about so run ``pip install dj-easy-pdf``
