@@ -95,7 +95,6 @@ Other Resources
 - GitHub repository - https://github.com/WilliamOtieno/dj-easy-pdf
 - PyPi Package site - https://pypi.python.org/pypi/dj-easy-pdf
 - Docs - https://dj-easy-pdf.readthedocs.io/
-- Initial Project - https://django-easy-pdf.readthedocs.io/
 
 
 Commercial Support
