@@ -67,6 +67,16 @@ Quickstart
             model = get_user_model()
             template_name = 'user_detail.html'
 
+5. If you're using Function Based views then:
+
+    .. code-block:: python
+    
+        from easy_pdf.rendering import render_to_pdf_response
+        
+        def pdf_output(request):
+            context = {}
+            return render_to_pdf_response(request, "output.html", context)
+
 Documentation
 -------------
 
