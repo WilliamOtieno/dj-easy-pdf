@@ -63,19 +63,19 @@ demo:
 # Docker workflow
 
 docker-build:
-	docker build -t django-easy-pdf .
+	docker build -t dj-easy-pdf .
 
 docker-demo: docker-build
-	docker run --rm -it -p 8000:8000 -v `pwd`/easy_pdf:/app/easy_pdf -v `pwd`/docs:/app/docs -v `pwd`/dist:/app/dist -v `pwd`/tests:/app/tests django-easy-pdf make demo
+	docker run --rm -it -p 8000:8000 -v `pwd`/easy_pdf:/app/easy_pdf -v `pwd`/docs:/app/docs -v `pwd`/dist:/app/dist -v `pwd`/tests:/app/tests dj-easy-pdf make demo
 
 docker-shell: docker-build
-	docker run --rm -it -v `pwd`/easy_pdf:/app/easy_pdf -v `pwd`/docs:/app/docs -v `pwd`/dist:/app/dist -v `pwd`/tests:/app/tests django-easy-pdf bash
+	docker run --rm -it -v `pwd`/easy_pdf:/app/easy_pdf -v `pwd`/docs:/app/docs -v `pwd`/dist:/app/dist -v `pwd`/tests:/app/tests dj-easy-pdf bash
 
 docker-upload:
-	docker run --rm -it -v ~/.pypirc:/root/.pypirc -v `pwd`/easy_pdf:/app/easy_pdf -v `pwd`/docs:/app/docs -v `pwd`/dist:/app/dist -v `pwd`/tests:/app/tests django-easy-pdf make upload
+	docker run --rm -it -v ~/.pypirc:/root/.pypirc -v `pwd`/easy_pdf:/app/easy_pdf -v `pwd`/docs:/app/docs -v `pwd`/dist:/app/dist -v `pwd`/tests:/app/tests dj-easy-pdf make upload
 
 docker-%: docker-build
-	docker run --rm -it -v `pwd`/easy_pdf:/app/easy_pdf -v `pwd`/docs:/app/docs -v `pwd`/dist:/app/dist -v `pwd`/tests:/app/tests -v `pwd`/artifacts:/app/artifacts django-easy-pdf make $*
+	docker run --rm -it -v `pwd`/easy_pdf:/app/easy_pdf -v `pwd`/docs:/app/docs -v `pwd`/dist:/app/dist -v `pwd`/tests:/app/tests -v `pwd`/artifacts:/app/artifacts dj-easy-pdf make $*
 
 ci-docker-%: docker-build
-	docker run -it -v `pwd`/easy_pdf:/app/easy_pdf -v `pwd`/docs:/app/docs -v `pwd`/dist:/app/dist -v `pwd`/tests:/app/tests -v `pwd`/artifacts:/app/artifacts django-easy-pdf make $*
+	docker run -it -v `pwd`/easy_pdf:/app/easy_pdf -v `pwd`/docs:/app/docs -v `pwd`/dist:/app/dist -v `pwd`/tests:/app/tests -v `pwd`/artifacts:/app/artifacts dj-easy-pdf make $*

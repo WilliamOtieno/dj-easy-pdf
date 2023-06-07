@@ -1,7 +1,7 @@
 Django PDF rendering
 ====================
 
-Django PDF rendering, the easy way but with support for newer versions of Django.
+Django PDF rendering, easily convert html responses to pdf responses
 
 .. image:: https://img.shields.io/pypi/v/dj-easy-pdf.svg
     :target: https://pypi.python.org/pypi/dj-easy-pdf/

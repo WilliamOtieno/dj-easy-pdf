@@ -157,5 +157,5 @@ def render_to_pdf_response(request, template, context, using=None, filename=None
         pdf = render_to_pdf(template, context, using=using, encoding=encoding, **kwargs)
         return make_response(pdf, filename)
     except PDFRenderingError as e:
-        logger.exception(e.message)
-        return HttpResponse(e.message)
+        logger.exception(e)
+        return HttpResponse(e)
