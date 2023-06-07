@@ -9,7 +9,7 @@ try:
 except ImportError:
     from distutils.core import setup
 
-version = "0.2.1"
+version = "0.2.2"
 
 if sys.argv[-1] == "publish":
     os.system("python setup.py sdist bdist_wheel upload")
@@ -41,7 +41,7 @@ setup(
     zip_safe=False,
     keywords="dj-easy-pdf",
     classifiers=[
-        "Development Status :: 4 - Beta",
+        "Development Status :: 4 - Stable",
         "Environment :: Web Environment",
         "Framework :: Django",
         "Intended Audience :: Developers",
