@@ -36,7 +36,7 @@ setup(
     install_requires=[
         "django>=3.2",
         "xhtml2pdf>=0.2",
-        "reportlab>=3"
+        "reportlab>=3",
         "requests"
     ],
     zip_safe=False,
