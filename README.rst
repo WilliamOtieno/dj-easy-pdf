@@ -36,7 +36,7 @@ Quickstart
 1. Include ``dj-easy-pdf``, ``xhtml2pdf`` in your ``requirements.txt`` file.
    If you are on Python 3 you need to install the latest version of Reportlab and the beta version of xhtml2pdf::
 
-    $ pip install xhtml2pdf
+    $ pip install dj-easy-pdf
 
 2. Add ``easy_pdf`` to ``INSTALLED_APPS``.
 
