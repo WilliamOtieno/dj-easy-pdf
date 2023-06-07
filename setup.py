@@ -41,7 +41,7 @@ setup(
     zip_safe=False,
     keywords="dj-easy-pdf",
     classifiers=[
-        "Development Status :: 4 - Stable",
+        "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",
         "Framework :: Django",
         "Intended Audience :: Developers",
