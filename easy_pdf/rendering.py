@@ -24,7 +24,7 @@ def fetch_resources(uri, rel=None):
     """
     Retrieves embeddable resource from given ``uri``.
 
-    For now only local resources (images, fonts) are supported.
+    Both local and remote resources are supported
 
     :param str uri: path or url to image or font resource
     :param str rel: used internally by xhtmltopdf
