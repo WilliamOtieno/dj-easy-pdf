@@ -4,22 +4,23 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 
 import logging
 import os
-
-from django.conf import settings
-from django.template import loader
-from django.http import HttpResponse
-from six import BytesIO
 from urllib.parse import quote as urlquote
+
 import xhtml2pdf.default
+from django.conf import settings
+from django.http import HttpResponse
+from django.template import loader
+from six import BytesIO
 from xhtml2pdf import pisa
 
-from .exceptions import UnsupportedMediaPathException, PDFRenderingError
+from .exceptions import PDFRenderingError
+from .utils import validate_image_url
 
 logger = logging.getLogger("app.pdf")
 logger_x2p = logging.getLogger("app.pdf.xhtml2pdf")
 
 
-def fetch_resources(uri, rel):
+def fetch_resources(uri):
     """
     Retrieves embeddable resource from given ``uri``.
 
@@ -38,11 +39,8 @@ def fetch_resources(uri, rel):
         path = os.path.join(settings.STATIC_ROOT, uri)
 
     if not os.path.isfile(path):
-        raise UnsupportedMediaPathException(
-            "media urls must start with {} or {}".format(
-                settings.MEDIA_ROOT, settings.STATIC_ROOT
-            )
-        )
+        if validate_image_url(uri):
+            return uri
 
     return path.replace("\\", "/")
 

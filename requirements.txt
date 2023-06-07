@@ -1,6 +1,6 @@
 django>=3.2
 xhtml2pdf
-
+requests
 # Dependencies of xhtml2pdf
 html5lib>=1.0b10
 httplib2>=0.8

@@ -3,6 +3,7 @@ setuptools>=34.3.3
 wheel>=0.29.0
 django-nose
 xhtml2pdf
+requests
 coverage
 gunicorn
 flake8>=3.3.0
