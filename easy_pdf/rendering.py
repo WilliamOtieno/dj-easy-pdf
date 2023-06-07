@@ -20,13 +20,14 @@ logger = logging.getLogger("app.pdf")
 logger_x2p = logging.getLogger("app.pdf.xhtml2pdf")
 
 
-def fetch_resources(uri):
+def fetch_resources(uri, rel=None):
     """
     Retrieves embeddable resource from given ``uri``.
 
     For now only local resources (images, fonts) are supported.
 
     :param str uri: path or url to image or font resource
+    :param str rel: used internally by xhtmltopdf
     :returns: path to local resource file.
     :rtype: str
     :raises: :exc:`~easy_pdf.exceptions.UnsupportedMediaPathException`
