@@ -2,6 +2,10 @@ import requests
 
 
 def validate_image_url(url):
+    """
+    Checks whether resource is valid by downloading
+    the resource and checking some header.
+    """
     try:
         response = requests.head(url, timeout=5)
         content_type = response.headers.get("content-type")
