@@ -9,7 +9,7 @@ try:
 except ImportError:
     from distutils.core import setup
 
-version = "0.3.6"
+version = "0.4.6"
 
 if sys.argv[-1] == "publish":
     os.system("python setup.py sdist bdist_wheel upload")
@@ -23,7 +23,7 @@ readme = open("README.rst").read()
 setup(
     name="dj-easy-pdf",
     version=version,
-    description="""Django PDF views, the easy way""",
+    description="""Django PDF views, easily convert html responses to pdf responses""",
     license="MIT",
     author="William Otieno",
     author_email="jimmywilliamotieno@gmail.com",
@@ -53,6 +53,7 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
         "Topic :: Software Development :: Libraries :: Python Modules"
     ],
 )
