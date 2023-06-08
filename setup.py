@@ -27,7 +27,7 @@ setup(
     license="MIT",
     author="William Otieno",
     author_email="jimmywilliamotieno@gmail.com",
-    url="https://github.com/WilliamOtieno/django-easy-pdf",
+    url="https://github.com/WilliamOtieno/dj-easy-pdf",
     long_description=readme + "\n\n",
     packages=[
         "easy_pdf",

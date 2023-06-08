@@ -60,12 +60,12 @@ Ready to contribute? Here's how to set up `dj-easy-pdf` for local development.
 1. Fork the `dj-easy-pdf` repo on GitHub.
 2. Clone your fork locally::
 
-    $ git clone git@github.com:your_name_here/django-easy-pdf.git
+    $ git clone git@github.com:your_name_here/dj-easy-pdf.git
 
 3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
 
-    $ mkvirtualenv django-easy-pdf
-    $ cd django-easy-pdf/
+    $ mkvirtualenv dj-easy-pdf
+    $ cd dj-easy-pdf/
     $ python setup.py develop
 
 4. Create a branch for local development::

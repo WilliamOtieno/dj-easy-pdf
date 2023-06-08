@@ -10,7 +10,7 @@ Django PDF rendering, easily convert html responses to pdf responses
     :target: https://pypi.python.org/pypi/dj-easy-pdf/
     :alt: Wheel
 .. image:: https://img.shields.io/pypi/l/dj-easy-pdf.svg
-    :target: https://pypi.python.org/pypi/django-easy-pdf/
+    :target: https://pypi.python.org/pypi/dj-easy-pdf/
     :alt: License
 
 Developed by `William Otieno <https://github.com/WilliamOtieno/>`_.
@@ -86,7 +86,7 @@ The full documentation is at `dj-easy-pdf.readthedocs.io <https://dj-easy-pdf.re
 Dependencies
 ------------
 
-``django-easy-pdf`` depends on:
+``dj-easy-pdf`` depends on:
 
     - ``django>=3.2``
     - ``xhtml2pdf``
