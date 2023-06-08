@@ -114,3 +114,9 @@ This app and many other help us build better software
 and focus on delivering quality projects faster.
 We would love to help you with your next project so get in touch
 by dropping an email at jimmywilliamotieno@gmail.com
+
+Inspired By What we Do?
+----------------------
+.. image:: https://cdn.buymeacoffee.com/buttons/default-red.png
+    :target: https://flutterwave.com/donate/bcclojijawho
+    :alt: Donate
